@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title iTunes Search
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto")
+    link(rel='stylesheet' href='/style.css')
+    script(type='text/javascript' src='/lodash.min.js')
+    script(type='text/javascript' src='/search.js')
+  body
+    header
+      h1 iTunes Search
+    main
+      section.search
+        p Type anything to start searching artists
+        .form
+          input(id='input' type='text' placeholder='e.g. Justin Bieber...')
+      section.results
