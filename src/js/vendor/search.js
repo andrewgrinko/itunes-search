@@ -19,8 +19,8 @@ function fetchData(input, resolve) {
   query += '&callback=CallbackRegistry.' + callbackName;
 
   CallbackRegistry[callbackName] = function(data) {
-   delete CallbackRegistry[callbackName];
-   resolve(data.results);
+    delete CallbackRegistry[callbackName];
+    resolve(data.results);
   };
 
   var elem = document.createElement("script");
